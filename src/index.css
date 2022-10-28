@@ -72,4 +72,15 @@ a {
     justify-content: space-around;
   
 }
+
+@media screen and (max-width: 700px) {
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
   
+    #footer > div {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+}
