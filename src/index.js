@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 //importing profile
 import Profile from './sections/profile.js';
 import Links from './sections/links.js';
+import Social from './sections/social.js';
 
 class Home extends React.Component {
     render(){
@@ -12,6 +13,8 @@ class Home extends React.Component {
                 <main>
                     <Profile />
                     <Links />
+                    <Social />
+
                 </main>
 
             </div>
