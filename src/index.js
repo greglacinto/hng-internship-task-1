@@ -1,29 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Root from './routes/root';
+import {
+    createBrowserRouter,
+    RouterProvider,
+    Route,
+} from 'react-router-dom';
 import './index.css';
 
-//importing sections
-import Profile from './sections/profile.js';
-import Links from './sections/links.js';
-import Social from './sections/social.js';
-import Footer from './sections/footer.js';
 
-class Home extends React.Component {
-    render(){
-        return (
-            <div>
-                <main>
-                    <Profile />
-                    <Links />
-                    <Social />
-                    <Footer />
+//add router
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Root />
+    },
+]);
 
-                </main>
-
-            </div>
-        );
-    }
-}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Home />);
+// root.render(<Home />);
+root.render(
+    <React.StrictMode>
+        <RouterProvider router={router} />
+    </React.StrictMode>
+)
