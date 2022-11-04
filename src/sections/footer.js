@@ -7,7 +7,7 @@ import i4GLogo from '../images/I4G.svg';
 class Footer extends React.Component {
     render(){
         return (
-            <div id="footer" class="flex-container">
+            <div id="footer" className="flex-container">
             <div id="logo">
                 <img src={logoImg} alt=""/>
             </div>

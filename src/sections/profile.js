@@ -4,7 +4,7 @@ import profileImg from '../images/profilePicture.png';
 class Profile extends React.Component {
     render() {
         return (
-            <section id="profile" class="flex-container">
+            <section id="profile" className="flex-container">
                 <div>
                     <img id="profile_img" src={profileImg} alt="profile"/>
                 </div>
