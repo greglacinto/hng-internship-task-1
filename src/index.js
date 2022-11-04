@@ -5,9 +5,9 @@ import Contact from './routes/contact';
 import {
     createBrowserRouter,
     RouterProvider,
-    Route,
 } from 'react-router-dom';
 import './index.css';
+import '../src/styles/contactMeForm.css';
 
 
 //add router
